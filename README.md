@@ -1,3 +1,3 @@
-# redux demo
+# material ui demo
 
-This is a redux demo.
+This is a material ui demo.
