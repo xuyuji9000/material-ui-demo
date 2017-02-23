@@ -1,20 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from "react-redux";
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
-import store from "./store";
-import Layout from "./components/Layout";
-import ItemList from "./components/ItemList.js";
-import Form from "./components/Form.js";
+import SimpleAppBarExample from "./SimpleAppBarExample";
 
-// Redux 
-const App = function() {
+const App = function()
+{
     return (
-        <Provider store={store}>
-            <Layout></Layout>
-        </Provider>
-    )
-};
+        <MuiThemeProvider>
+            <SimpleAppBarExample></SimpleAppBarExample>
+        </MuiThemeProvider>
+    );
+}
 
 render(
     <App></App>,
